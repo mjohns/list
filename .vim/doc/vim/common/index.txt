@@ -4,14 +4,6 @@
 Common
 ******
 
-- Eclipse Projects ()
-- Utility Commands ()
-- Local History ()
-  - Configuration (#configuration)
-- Web Lookup Commands ()
-  - OpenUrl (#openurl)
-  - Configuration (#configuration)
-  - Web Search Commands (#web-search-commands)
 - Eclipse Projects (|vim-common-project|)
 
 - Utility Commands (|vim-common-util|)
