@@ -1,6 +1,3 @@
-# Copyright 2012 Google Inc. All Rights Reserved.
-
-__author__ = 'mjohns@google.com (Michael Johns)'
 
 import vim
 import commands
