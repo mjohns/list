@@ -371,8 +371,4 @@ Windows:
 
    <
 
-
-For an example of utilizing the ext dir, please take a look at the
-VimClojure (|guides-clojure-vimclojure|) guide.
-
 vim:ft=eclimhelp

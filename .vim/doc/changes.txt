@@ -1,6 +1,24 @@
 History of Changes
 ******************
 
+*1.7.4*
+
+
+1.7.4 (Apr. 22, 2012)
+=====================
+
+Bug Fixes:
+   - Fixed possible NPE saving eclim settings.
+
+   - Several other small bug fixes.
+
+C/C++:
+   - Fixed code completion by disabling the use of temp files.
+
+Java:
+   - Fixed :Java on windows as well as handling of stdin for ant
+     1.8.2+.
+
 *1.7.3*
 
 
@@ -426,9 +444,8 @@ Eclim:
      party snippets plugins available on vim.org (snipMate,
      snippetsEmu, etc.).
 
-   - Added support for hosting third party nailgun apps, like
-     VimClojure (|guides-clojure-vimclojure|), in eclim via an ext dir
-     (|eclimd-extdir|).
+   - Added support for hosting third party nailgun apps in eclim via
+     an ext dir (|eclimd-extdir|).
 
 Java:
    - Updated |:JavaImpl|, |:JavaDelegate|, and |:JUnitImpl| to better
