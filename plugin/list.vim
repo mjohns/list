@@ -17,3 +17,8 @@ function! RunCmd(name)
   call InitializeListPython()
   exe 'python RunCmd(' . '(vim.eval("a:name")))'
 endfunction
+
+function! RunCmdAutoOpen(name)
+  call InitializeListPython()
+  exe 'python RunCmd(' . '(vim.eval("a:name")), True)'
+endfunction

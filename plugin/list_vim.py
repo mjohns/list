@@ -2,10 +2,10 @@ import vim
 import commands
 
 
-def RunCmd(name):
+def RunCmd(name, autoOpen = False):
   s,output=commands.getstatusoutput(name)
   files=output.split('\n')
-  ListFiles(files, False)
+  ListFiles(files, autoOpen)
 
 
 def ListFiles(files, autoOpen):
