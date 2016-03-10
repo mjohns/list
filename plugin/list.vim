@@ -22,3 +22,8 @@ function! RunCmdAutoOpen(name)
   call InitializeListPython()
   exe 'python RunCmd(' . '(vim.eval("a:name")), True)'
 endfunction
+
+fun! RunCmdWithHistory(c)
+  call histadd("cmd", "RunCmd " . a:c)
+  call RunCmd(a:c)
+endfun
