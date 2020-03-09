@@ -1,9 +1,9 @@
 import vim
-import subprocess
+import commands
 
 
 def RunCmd(name, autoOpen = False):
-  s,output=subprocess.getstatusoutput(name)
+  s,output=commands.getstatusoutput(name)
   lines=output.split('\n')
   ListOutput(lines, autoOpen)
 
