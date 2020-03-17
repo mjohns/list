@@ -1,5 +1,6 @@
 import vim
 import subprocess
+import uuid
 
 
 def RunCmd(name, autoOpen = False):
@@ -16,8 +17,10 @@ def ListOutput(lines, autoOpen):
   elif len(lines) == 1 and autoOpen:
     vim.command('e ' + lines[0])
   else:
-    vim.command('call s:CreateTempBuffer()')
-    vim.command('setlocal modifiable')
+    vim.command('edit temporary_buffer_' + uuid.uuid4().hex)
+    vim.command('setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap');
+    vim.command('1')
+
     vim.command('map <buffer> <Enter> gF')
     vim.command('map <buffer> q <C-^>')
     vim.command('map <buffer> :q q')

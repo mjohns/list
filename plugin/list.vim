@@ -11,12 +11,6 @@ function! InitializeListPython()
   endif
 endfunction
 
-function! s:CreateTempBuffer()
-  edit temporary_buffer
-  setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap
-  1
-endfunction
-
 function! RunCmd(name)
   call InitializeListPython()
   if has('python3')
